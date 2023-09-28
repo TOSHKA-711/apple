@@ -1,0 +1,151 @@
+
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+body{
+    background-color: #000;
+}
+.header{
+    background:#000 ;
+    color : white;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.header .container{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    max-width:40px;  
+}
+.header-list ul{
+    display: flex;
+}
+.header-list ul li{
+    padding: 7px;
+    cursor: pointer;
+}
+.header-list ul li:hover{
+    color: rebeccapurple;
+}
+.home{
+    width: 100vw;
+    height: 75vh;
+display: flex;
+justify-content:center ;
+align-items: center;
+}
+.home .container{
+    width: 80%;
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .container .text {
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    
+}
+
+.home .container .phone-image img {
+    width: 50%;
+
+}
+.home .container .phone-image  {
+    width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.home .container .text button{
+    margin-top: 10px;
+    border: 5px solid white;
+    text-align: center;
+    font-size: 15px;
+    height: 35px;
+    border-radius: 45%;
+    width: 39%;
+    cursor: pointer;
+}
+.footer{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container{
+    width: 80%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container ul{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.footer .container ul li{ transition: .5s;
+     -webkit-transition: .5s;
+      -moz-transition: .5s;
+       -ms-transition: .5s;
+        -o-transition: .5s;
+        cursor: pointer;
+}
+.footer .container ul li img{
+    max-width: 50px;
+}
+.footer .container ul li:hover{
+    margin-bottom: 25px;
+}
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 768px) {
+    .home .container .phone-image {
+        width: 60%;
+    }
+    .home .container {
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-evenly;
+    }
+  
+    .header-list ul {
+      margin-top: 20px;
+    }
+  
+    .home .container .text {
+      width: 100%;
+    }
+  
+
+  
+    .home .container .text button {
+      width: 70%;
+    }
+  
+    .footer .container ul li {
+      margin: 0 5px;
+      font-size: 14px;
+    }
+  }
